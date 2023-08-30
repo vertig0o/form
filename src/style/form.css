@@ -1,0 +1,253 @@
+.MultiStepForm {
+  display: flex;
+  padding: 12px;
+  background-color: var(--white);
+  border-radius: 16px;
+  height: 80vh;
+
+  width: 100vh;
+}
+.Sidebar {
+  background: url(../images/bg-sidebar-desktop.svg);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--white);
+  padding: 24px;
+  width: 30%;
+  border-radius: 8px;
+}
+.Sign-up {
+  flex: 5 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+}
+.Sign-up h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+}
+.Sign-up h3 {
+  color: var(--cool-gray);
+  font: inherit;
+  margin: 0;
+}
+.input {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid var(--light-gray);
+  border-radius: 8px;
+  color: var(--marine-blue);
+  font-weight: 500;
+  transition: border-color 200ms ease;
+}
+input::placeholder {
+  color: var(--cool-gray);
+}
+.input &:hover {
+  border-color: var(--purplish-blue);
+}
+
+Button disable {
+  background-color: var(--clr-denim);
+  padding: 12px 24px;
+  border-radius: 8px;
+}
+.NextStep {
+  background-color: var(--marine-blue);
+  color: var(--white);
+  padding: 12px 24px;
+  border-radius: 8px;
+}
+.BackStep {
+  color: var(--cool-gray);
+  &:hover {
+    color: inherit;
+  }
+}
+.form {
+  flex: 1 1 0%;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 300px;
+  padding: 24px;
+}
+
+.items {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.number {
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--white);
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subtitle {
+  font-size: 13px;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
+.title {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.footer {
+  position: fixed;
+  margin-left: 33%;
+  bottom: 10%;
+  right: 0;
+  right: 32%;
+}
+.Step2 {
+  display: flex;
+  width: 90%;
+  flex: 1;
+  align-items: center;
+  gap: 2rem;
+}
+
+.plan-card {
+  border: 2px solid var(--light-gray);
+  border-radius: 7px;
+  width: 150px;
+  height: 170px;
+  cursor: pointer;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.plan-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.plan-info b {
+  color: var(--Marine-blue);
+}
+.plan-info span {
+  color: var(--Cool-gray);
+}
+.monthly,
+.yearly {
+  color: var(--Cool-gray);
+  font-weight: 500;
+}
+.sw-active {
+  color: var(--Marine-blue);
+}
+.switcher {
+  background-color: var(--Magnolia);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  margin-bottom: 5rem;
+  justify-content: center;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--marine-blue);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.step-3 {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+}
+.step-3 form {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.box {
+  border: 1px solid var(--Cool-gray);
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-left: 12px;
+}
+.price {
+  margin-left: auto;
+}
+.ad-selected {
+  border: 1px solid var(--Purplish-blue);
+  background-color: var(--Magnolia);
+}
+.step-3 form input {
+  accent-color: var(--Purplish-blue);
+  transform: scale(1.3);
+  user-select: none;
+}
+.description label {
+  color: var(--Marine-blue);
+  font-weight: 700;
+  user-select: none;
+}
+.description small {
+  color: var(--Cool-gray);
+  font-weight: 700;
+}
+.price {
+  color: var(--Purplish-blue);
+}
